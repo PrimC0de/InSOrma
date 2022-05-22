@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/UserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="87dp"
+        android:hint="Email"
+        android:layout_marginRight="200px"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="800px"></EditText>
+
+    <EditText
+        android:id="@+id/UserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="155dp"
+        android:hint="Password"
+        android:layout_marginRight="200px"
+        android:layout_marginLeft="200px">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="285dp"
+        android:text="Login"
+        android:layout_marginLeft="400px"
+        android:layout_marginRight="400px"></Button>
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="400px"
+        android:layout_marginRight="400px"
+        android:text="Register"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="295dp"></Button>
+
+</LinearLayout>
+

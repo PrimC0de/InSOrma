@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/MainPageLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Transaction"
+        android:layout_below="@+id/UserUsername"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="4dp">
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/destiny_eating"/>-->
+    </ListView>
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="179dp"
+        android:width="600px"
+        android:text="Welcome, "
+        android:textSize="50dp" >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/UserUsername"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Welcome"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-2dp"
+        android:hint="Username"
+        android:textSize="50dp"/>
+
+    <ImageButton
+        android:id="@+id/Home"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/Profile"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/Transaction"
+        android:background="@drawable/ic_baseline_person_24" />
+
+    <ImageButton
+        android:id="@+id/Transaction"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/Home"
+        android:background="@drawable/ic_baseline_attach_money_24" />
+
+
+</RelativeLayout>
